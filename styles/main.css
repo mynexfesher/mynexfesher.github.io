@@ -1,0 +1,111 @@
+main{
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 15px;
+    margin-left: 88px;
+}
+
+
+@media screen and (min-width:500px){
+    main{
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+    nav{
+        margin-right: 20px;
+        max-width: 470px;
+        height: 58.5vw;
+        max-height: 380px;
+    }
+    main nav .post-container .image-video{
+        height: 41vw;
+        max-height: 300px;
+    }
+    main nav .post-container .video-time{
+        padding: 1vw;
+        font-size: 2.8vw;
+    }
+    main .video-details .video-title,
+    main .video-details .channal-name-status{
+        font-size: 2.7vw;
+    }
+}
+
+@media screen and (min-width:550px){
+    main{
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    nav{
+        max-width: 550px;
+        height: 37.7vw;
+        max-height: 320px;
+    }
+    main nav .post-container .image-video{
+        height: 23vw;
+        max-height: 300px;
+    }
+    main nav .post-container .video-time{
+        padding: .5vw;
+        font-size: 1.8vw;
+    }
+    main .video-details .video-title{
+        font-size: 1.5vw;
+    }
+}
+@media screen and (min-width:1000px){
+    main{
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+    }
+    nav{
+        max-width: 550px;
+        height: 24.5vw;
+        max-height: 380px;
+    }
+    main nav .post-container .image-video{
+        height: 16vw;
+        max-height: 300px;
+    }
+    main nav .post-container .video-time{
+        padding: .3vw;
+        font-size: 1.8vw;
+    }
+    main .video-details .video-title{
+        font-size:1.3vw;
+    }
+}
+@media screen and (max-width:600px){
+    header .left-section{
+        padding: 0;
+    }
+    header .left-section .logo{
+        margin-left: 10px;
+    }
+    header .middle-section{
+        padding: 0;
+        margin-left: 5px;
+    }
+    header .middle-section .search-button{
+        padding: 0 8px;
+    }
+    header .middle-section .voice-search-button{
+        margin-right: 5px;
+        height: 35px;
+        width: 35px;
+    }
+    header .middle-section .voice-search-icon{
+        height: 20px;
+        margin-top: 6px;
+    }
+    header .right-section .upload,
+    header .righy-section .apps,
+    header .right-section .notifications{
+        margin-right: 10px;
+    }
+    header .right-section .notifications-container .notifications-count{
+        right: 9px;
+        top: 2px;
+    }
+}

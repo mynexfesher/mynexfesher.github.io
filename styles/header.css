@@ -1,0 +1,137 @@
+header{
+    position: fixed;
+    z-index: 20;
+    background-color: white;
+    top: 0;
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid rgb(206, 206, 206);
+}
+.left-section,
+.middle-section,
+.right-section{
+    display: flex;
+    align-items: center;
+}
+
+.left-section{
+    padding: 0 20px;
+}
+
+.menu{
+    width: 23px;
+}
+.logo{
+    width: 90px;
+    margin-left: 20px;
+}
+
+.middle-section{
+    justify-content: center;
+    padding: 0 30px;
+    flex: 1;
+    max-width: 500px;
+}
+.search-input{
+    height: 38px;
+    flex: 1;
+    width: 20px;
+    max-width: 355px;
+    border: 1px solid  rgb(189, 189, 189);
+    border-radius: 2px;
+    font-size: 16px;
+    text-indent: 10px;
+    box-shadow: inset 1px 2px 3px rgb(238, 238, 238);
+}
+
+.search-button{
+    height: 42px;
+    margin-left: -2px;
+    padding: 0 22px;
+    border: 1px solid  rgb(189, 189, 189);
+    border-radius: 2px;
+    background-color: rgb(245, 245, 245);
+}
+
+.search-button,
+.voice-search-button,
+.upload-container,
+.apps-container,
+.notifications-container{
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-container .tooltip,
+.apps-container .tooltip,
+.notifications-container .tooltip{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding:4px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    opacity: 0;
+    bottom: -30px;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-container:hover .tooltip,
+.apps-container:hover .tooltip,
+.notifications-container:hover .tooltip{
+    opacity: 1;
+    transition: 5s;
+}
+
+.search-icon{
+    height: 22px;
+    margin-top: 10px;
+}
+.voice-search-button{
+    margin-left: 8px;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(245, 245, 245);
+}
+.voice-search-icon{
+    margin-top: 6px;
+    height: 24px;
+}
+
+.upload,
+.apps,
+.notifications{
+    width: 26px;
+    margin-right: 23px;
+}
+.channal-profile{
+    margin-right: 19px;
+    height: 32px;
+    width: 32px;
+    border-radius: 16px;
+}
+.notifications-container{
+    position: relative;
+}
+
+.notifications-container .notifications-count{
+    position: absolute;
+    background-color: rgb(189, 0, 0);
+    font-size: 11px;
+    color: white;
+    padding: 1px 4px;
+    border-radius: 50%;
+    top: 0;
+    right: 23px;
+}
